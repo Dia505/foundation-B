@@ -48,3 +48,31 @@ filter_odd_even(any_num)
 print(f"the odd list is: {[odd_list]}")
 print(f"the even list is: {[even_list]}")
     
+#ask age from user with filter and check he/she is eligible for vote. The person must be 19 or greater.
+age=int(input("please provide age:"))
+if age>=19:
+    print("you are eligible to vote")
+else:
+    print("you are not eligible to vote")
+
+#ask a num with user and filter odd and add in odd list.
+the_num=int(input("Please provide any number:"))
+odd_list=[]
+def filter_odd(user_provided_num):
+    for num in range(1,user_provided_num+1):
+        if num % 2 == 1:
+           odd_list.append(num)
+filter_odd(the_num)
+print(f"the odd numbers are {odd_list}")
+
+"""
+def list_creator(any_num):
+    for i in range(1, any_num+1):
+        if i % 2 == 1:
+            odd_list.append(i)
+        return odd_list
+print(list_creator(any_num))
+"""
+#first name 
+f_name, s_name = input("please provode name:").split(" ")
+print(f"your full name is: {f_name} {s_name}")
