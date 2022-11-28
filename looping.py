@@ -25,7 +25,7 @@ for day in week_days_list:
     counter += 1
     print(f"the {counter} day is: -->{day}")
 
-#same program with the help of range fucntion
+#same program with the help of range function
 for position in range(0, len(week_days_list)):
     print(f"the {position} position in day is: -->{week_days_list[position]}")
 
@@ -73,6 +73,6 @@ def list_creator(any_num):
         return odd_list
 print(list_creator(any_num))
 """
-#first name 
-f_name, s_name = input("please provode name:").split(" ")
+#printing name 
+f_name, s_name = input("please provide name:").split(" ")
 print(f"your full name is: {f_name} {s_name}")
